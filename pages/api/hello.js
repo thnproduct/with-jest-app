@@ -1,4 +1,4 @@
 // /pages/api/[animal].js
-export default function handleHello(req, res) {
-  res.end(JSON.stringify({ message: `HelloWorld` }));
+export default function handler(req, res) {
+  res.status(200).json({ name: 'John Doe' })
 }

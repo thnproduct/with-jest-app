@@ -8,7 +8,7 @@ import styles from '@/pages/index.module.css'
 export default function Home() {
   useEffect(() => {    
     // Update the document title using the browser API    
-    axios.get('/api/spider')
+    axios.get('/api/animal/spider')
       .then(function (response) {
         // handle success
         console.log(response);
@@ -19,19 +19,20 @@ export default function Home() {
       })
       .then(function () {
         // always executed
+        axios.get('/api/hello')
+          .then(function (response) {
+            // handle success
+            console.log(response);
+          })
+          .catch(function (error) {
+            // handle error
+            console.log(error);
+          })
+          .then(function () {
+            // always executed
+          });
       });
-    axios.get('/api/hello')
-      .then(function (response) {
-        // handle success
-        console.log(response);
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .then(function () {
-        // always executed
-      });
+    
   });
 
   return (

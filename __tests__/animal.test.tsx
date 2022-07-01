@@ -1,9 +1,9 @@
 // __tests__/animal.test.js
 // 🚨 Remember to keep your `*.test.js` files out of your `/pages` directory!
 import { createMocks } from 'node-mocks-http';
-import handleAnimal from '@/pages/api/[animal]'
+import handleAnimal from '@/pages/api/animal/[animal]'
 
-describe('/api/[animal]', () => {
+describe('/api/animal/[animal]', () => {
   test('returns a message with the specified animal', async () => {
     const { req, res } = createMocks({
       method: 'GET',
