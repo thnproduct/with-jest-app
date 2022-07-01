@@ -72,6 +72,7 @@ export function Another() {
   .then(function (response) {
     // handle success
     console.log(response);
+    console.log("Running up the hill");
   })
   .catch(function (error) {
     // handle error
