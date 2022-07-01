@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="2" failures="0" errors="0" time="2.232">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2022-06-30T13:17:43" time="0.971" tests="1">
-    <testcase classname=" renders homepage unchanged" name=" renders homepage unchanged" time="0.036">
+<testsuites name="jest tests" tests="2" failures="0" errors="0" time="1.1">
+  <testsuite name="Home" errors="0" failures="0" skipped="0" timestamp="2022-07-01T07:55:18" time="0.573" tests="1">
+    <testcase classname="Home renders a heading" name="Home renders a heading" time="0.112">
     </testcase>
   </testsuite>
-  <testsuite name="Home" errors="0" failures="0" skipped="0" timestamp="2022-06-30T13:17:43" time="1.087" tests="1">
-    <testcase classname="Home renders a heading" name="Home renders a heading" time="0.153">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2022-07-01T07:55:18" time="0.105" tests="1">
+    <testcase classname=" renders homepage unchanged" name=" renders homepage unchanged" time="0.013">
     </testcase>
   </testsuite>
 </testsuites>
