@@ -1,10 +1,27 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import axios from 'axios'
+import React, { useState, useEffect } from 'react';
 
 import styles from '@/pages/index.module.css'
 
 export default function Home() {
+  useEffect(() => {    
+    // Update the document title using the browser API    
+    axios.get('/api/spider')
+      .then(function (response) {
+        // handle success
+        console.log(response);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+  });
+
   return (
     <div className={styles.container}>
       <Head>
