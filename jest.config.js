@@ -16,6 +16,7 @@ const customJestConfig = {
   },
   testEnvironment: 'jest-environment-jsdom',
   reporters: [ "default", "jest-junit" ],
+  collectCoverageFrom: ["pages/**/*.{js,jsx,tsx}"],
   coverageReporters: ["json", "cobertura"]
 }
 
