@@ -28,6 +28,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Print NPM version
+      run: |
+        npm --version    
     - name: Run script
       run: |
         cd scripts && chmod +x ./run.sh && ./run.sh
