@@ -19,8 +19,13 @@
       "@/components/*": ["components/*"],
       "@/pages/*": ["pages/*"],
       "@/styles/*": ["styles/*"]
-    }
+    },
+    "types": [
+      "jest",
+      "puppeteer",
+      "jest-environment-puppeteer",
+    ],
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types.d.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types.d.ts", "./__tests__"],
   "exclude": ["node_modules"]
 }
