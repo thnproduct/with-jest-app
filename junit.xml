@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="2" failures="0" errors="0" time="5.467">
-  <testsuite name="/api/animal/[animal]" errors="0" failures="0" skipped="0" timestamp="2022-07-04T10:52:54" time="2.919" tests="1">
-    <testcase classname="/api/animal/[animal] returns a message with the specified animal" name="/api/animal/[animal] returns a message with the specified animal" time="0.001">
+<testsuites name="jest tests" tests="2" failures="0" errors="0" time="3.879">
+  <testsuite name="/api/animal/[animal]" errors="0" failures="0" skipped="0" timestamp="2022-07-04T11:01:04" time="0.83" tests="1">
+    <testcase classname="/api/animal/[animal] returns a message with the specified animal" name="/api/animal/[animal] returns a message with the specified animal" time="0.002">
     </testcase>
   </testsuite>
-  <testsuite name="Google.com" errors="0" failures="0" skipped="0" timestamp="2022-07-04T10:52:54" time="4.676" tests="1">
-    <testcase classname="Google.com should get correct title when go to home page" name="Google.com should get correct title when go to home page" time="1.942">
+  <testsuite name="Google.com" errors="0" failures="0" skipped="0" timestamp="2022-07-04T11:01:04" time="2.87" tests="1">
+    <testcase classname="Google.com should get correct title when go to home page" name="Google.com should get correct title when go to home page" time="1.949">
     </testcase>
   </testsuite>
 </testsuites>
