@@ -49,6 +49,15 @@ jobs:
       with:
         name: coverage-artifact
         path: coverage/*.xml  
+    - uses: inception-health/otel-upload-test-artifact-action@v1
+      if: always()
+      with:
+        jobName: "build-and-test"
+        stepName: "run tests"
+        path: "junit.xml"
+        type: "junit"
+        githubToken: ${{ secrets.G_TOKEN }}
+  
   otel-export-trace:
     if: always()
     name: OpenTelemetry Export Trace
@@ -60,4 +69,5 @@ jobs:
         with:
           otlpEndpoint: grpc://api.honeycomb.io/
           otlpHeaders: ${{ secrets.OTLP_HEADERS }}
-          githubToken: ${{ secrets.G_TOKEN }}  
+          githubToken: ${{ secrets.G_TOKEN }} 
+          runId: ${{ github.event.workflow_run.id }}
