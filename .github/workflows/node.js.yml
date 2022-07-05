@@ -49,4 +49,15 @@ jobs:
       with:
         name: coverage-artifact
         path: coverage/*.xml  
-       
+  otel-export-trace:
+    if: always()
+    name: OpenTelemetry Export Trace
+    runs-on: ubuntu-latest
+    needs: [build] # must run when all jobs are complete
+    steps:
+      - name: Export Workflow Trace
+        uses: inception-health/otel-export-trace-action@latest
+        with:
+          otlpEndpoint: grpc://api.honeycomb.io/
+          otlpHeaders: ${{ secrets.OTLP_HEADERS }}
+          githubToken: ${{ secrets.G_TOKEN }}  
