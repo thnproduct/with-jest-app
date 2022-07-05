@@ -54,7 +54,7 @@ jobs:
       with:
         jobName: "build-and-test"
         stepName: "run tests"
-        path: "junit.xml"
+        path: "./junit.xml"
         type: "junit"
         githubToken: ${{ secrets.G_TOKEN }}
   
