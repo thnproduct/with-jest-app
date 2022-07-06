@@ -60,7 +60,7 @@ jobs:
     - uses: codeboten/github-action-to-otlp@v1
       if: always()
       with:
-        endpoint: 'https://ingest.lightstep.com/traces/otlp/v0.6'
+        endpoint: 'grpc://ingest.lightstep.com/traces/otlp/v0.6'
         headers: ${{ secrets.LIGHTSTEP_HEADERS }}
   
   otel-export-trace:
