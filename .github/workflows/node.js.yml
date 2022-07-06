@@ -56,6 +56,11 @@ jobs:
         path: "junit.xml"
         type: "junit"
         githubToken: ${{ secrets.G_TOKEN }}
+        
+    - uses: codeboten/github-action-to-otlp@v1
+      with:
+        endpoint: 'https://ingest.lightstep.com/traces/otlp/v0.6'
+        headers: ${{ secrets.LIGHTSTEP_HEADERS }}
   
   otel-export-trace:
     if: always()
