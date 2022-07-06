@@ -50,8 +50,6 @@ jobs:
     - uses: inception-health/otel-upload-test-artifact-action@v1
       if: always()
       with:
-        jobName: "build-and-test"
-        stepName: "run tests"
         path: "./junit.xml"
         type: "junit"
         githubToken: ${{ secrets.G_TOKEN }}
