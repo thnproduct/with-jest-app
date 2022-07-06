@@ -62,6 +62,7 @@ jobs:
       with:
         endpoint: 'grpc://ingest.lightstep.com/traces/otlp/v0.6'
         headers: ${{ secrets.LIGHTSTEP_HEADERS }}
+        repo-token: ${{ secrets.G_TOKEN }} 
   
   otel-export-trace:
     if: always()
