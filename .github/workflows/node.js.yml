@@ -57,11 +57,12 @@ jobs:
         type: "junit"
         githubToken: ${{ secrets.G_TOKEN }}
         
-    - uses: codeboten/github-action-to-otlp@v1
+    - uses: v1v/github-action-to-otlp@v2
       if: always()
       with:
         endpoint: grpc://ingest.lightstep.com:443/traces/otlp/v0.6
         headers: ${{ secrets.LIGHTSTEP_HEADERS }}
+        repo-token: ${{ secrets.G_TOKEN }} 
   
   otel-export-trace:
     if: always()
