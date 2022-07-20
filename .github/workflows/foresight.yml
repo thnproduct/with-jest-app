@@ -49,5 +49,5 @@ jobs:
           test_format: JUNIT
           test_framework: JEST
           test_path: ./junit.xml   
-          coverage_format: COBERTURA
+          coverage_format: COBERTURA/XML
           coverage_path: coverage/*.xml
