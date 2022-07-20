@@ -42,6 +42,7 @@ jobs:
       - name: run tests
         run: HEADLESS=true npm test --coverage
       - name: Analyze Test and/or Coverage Results
+        if: success() || failure()
         uses: thundra-io/foresight-test-kit-action@v1
         with:
           api_key: ${{ secrets.FRS_PROD_API_KEY }}
