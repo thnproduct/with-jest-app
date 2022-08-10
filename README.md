@@ -1,17 +1,14 @@
 <table width="100%">
 <tr>
 <td>
-  <img width="1000" height="0">
+  <img width="100">
   <a href="https://www.runforesight.com/?utm_source=with-jest-app-bk&utm_medium=sponsorship">
   <img src="https://www.thundra.io/hubfs/RunForesight/GitHub%20Sponsorship%20banners/visualize-github-actions.png" alt="Foresight" width="260" align="right">
   </a>
-
 <h3>Foresight: Increase CI/CD Health & Test Performance</h3>
-
   <p>
 Foresight provides full visibility and deep insights into the health and performance of your tests and CI/CD pipelines. Assess the risk of changes, resolve bottlenecks, reduce build times, and deliver high-quality software at speed with Foresight.
   </p>
-
 [Sign up now!](https://runforesight.com/?utm_source=with-jest-app-bk&utm_medium=sponsorship)
 </td>
 </tr>
