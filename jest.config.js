@@ -17,7 +17,7 @@ const customJestConfig = {
   // testEnvironment: 'jest-environment-jsdom',
   reporters: [ "default", "jest-junit" ],
   collectCoverageFrom: ["pages/**/*.{js,jsx,tsx}"],
-  coverageReporters: ["json", "cobertura"],
+  coverageReporters: ["json", "cobertura", "lcov"],
   testTimeout: 30000,
   testMatch: ['**/?(*.)+(spec|test).[t]s'],
   preset: 'jest-puppeteer',
