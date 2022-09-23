@@ -46,4 +46,3 @@ pnpm create next-app --example with-jest with-jest-app
 ```bash
 npm test
 ```
-test
