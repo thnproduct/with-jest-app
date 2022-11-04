@@ -5,6 +5,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --coverage",
+    "test-single": "jest -i google.spec.ts",
     "test:ci": "jest --ci"
   },
   "dependencies": {
